@@ -1,0 +1,16 @@
+###Test backend is online
+GET http://localhost:5000/
+
+###Test getting data from backend
+POST http://localhost:5000/get-data
+Content-Type: application/json
+x-api-key: dYpdXfKaYeWS5XfvV5qWn7k456FQZr0BpH3rsN2g9ta3ZAfjE4
+
+{
+    "kind": "vm"
+}
+
+
+
+
+
