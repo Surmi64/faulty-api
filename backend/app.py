@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 import os
+from flask_cors import CORS
 
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
@@ -37,6 +38,7 @@ data = {
 }
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/', methods=['GET'])
 def welcome():
