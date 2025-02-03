@@ -44,6 +44,10 @@ CORS(app)
 def welcome():
     return "Welcome!"
 
+@app.route('/getdata', methods=['POST'])
+def getdata():
+    return jsonify({"error": "This is not the endpoint you are looking for!"}), 404
+    
 @app.route('/get-data', methods=['POST'])
 def get_data():
         
