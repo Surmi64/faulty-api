@@ -7,4 +7,5 @@
 - python app.py
 
 # Start the frontend:
+- npm install
 - npm start
