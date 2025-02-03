@@ -1,5 +1,5 @@
 # Start the Backend:
-- place the dotenv with API_KEY in the backend folder
+- place a ".env" file with API_KEY= in the backend folder (no quotes needed)
 - cd backend
 - python -m venv venv
 - venv/Scripts/activate
