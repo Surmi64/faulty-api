@@ -7,7 +7,10 @@ export const Welcome = () => {
 
   const fetchWelcome = async (): Promise<void> => {
     const response = await fetch("http://localhost:5000/", {
-      method: "POST",
+      method: "GET",
+      headers: {
+        "Content-Type": "text/html"
+      }
     });
 
     if (!response.ok) {
