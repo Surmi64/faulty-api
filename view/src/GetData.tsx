@@ -20,13 +20,13 @@ export const GetData = () => {
     setIsResponseBack(false);
 
     try {
-      const response = await fetch("http://localhost:5000/getdata", {
+      const response = await fetch("http://localhost:5000/get-data", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "key": "dYpdXfKaYeWS5XfvV5qWn7k456FQZr0BpH3rsN2g9ta3ZAfjE4",
+          "x-api-key": "dYpdXfKaYeWS5XfvV5qWn7k456FQZr0BpH3rsN2g9ta3ZAfjE4",
         },
-        body: JSON.stringify({ param: "kind" }),
+        body: JSON.stringify({ kind: "subscription" }),
       });
 
       setResponseStatus(response.status);

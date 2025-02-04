@@ -16,7 +16,7 @@ export const ButtonContainer = ({onClickFunc, description}: ButtonContainerParam
           gap: "16px",
         }}
       >
-        <button onClick={() => onClickFunc}>FETCH</button>
+        <button onClick={onClickFunc}>FETCH</button>
         <p>{description}</p>
       </div>
     )
